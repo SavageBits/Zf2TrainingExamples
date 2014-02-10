@@ -71,6 +71,17 @@ return array(
                     ),  
 
                 )
+            ),
+            'helmetWorld' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/helmet_world',
+                    'defaults' => array(
+                        'controller'    => 'HelmetWorld',
+                        'action'        => 'helmetWorld',
+                    ),
+
+                )
             )
         ),
     ),
@@ -96,7 +107,8 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Application\Controller\Index' => 'Application\Controller\IndexController',
-            'HelloWorld'                   => 'Application\Controller\HelloWorldController'
+            'HelloWorld'                   => 'Application\Controller\HelloWorldController',
+            'HelmetWorld'                  => 'Application\Controller\HelmetWorldController'
         ),
     ),
     'view_manager' => array(
